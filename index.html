@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+</head>
+<body>
+
+<h1>Praveen Kumar Singh</h1>
+<h2>My Profile</h2>
+<p>This is a try</p>
+<img src="/images/profilepic.jpg" alt="Praveen Singh Profile Photo" width="104" height="142">
+<br>
+<a href="https://www.linkedin.com/in/praveen-singh-623b53272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Praveen Kumar Singh</h1>
+            <a href="https://github.com/Praveen318"target="_blank">My Github Link</a>
+            <p>AI Engineer |Software Engineer| Tech Enthusiast</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an AI Engineer with a passion for integrating AI into software products. My journey in tech began with web development, and I have since expanded into machine learning and artificial intelligence.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">AI Integration</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project" onclick="showDetails('project1')">
+            <h3>Minitest</h3>
+            <p>It allows the master to create and manage multiple-choice questions, set test rules such as total time, number of questions, and grant permission to students to take the test.<br><strong>Technologies Used</strong><br>Eclipse<br>Postman<br>MySQL<br>Spring Boot<br>Java.</p>
+        </div>
+        <div class="project" onclick="showDetails('project2')">
+            <h3>VANI: ADVANCED MULTI-MODAL CHATBOT</h3>
+            <p>A chatbot that seamlessly integrates LLMs into everyday conversations, empowering users with natural language understanding and generation capabilities.</p>
+        </div>
+        <!-- More projects can be added here -->
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a id="github-link" href="#" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:praveenkrsingh0309@gmail.com">Mail Praveen</a>
+        <!-- <p>Email: praveenkrsingh0309@gmail.com</p> -->
+         <br>
+        <a href="https://www.linkedin.com/in/praveen-singh-623b53272"target="_blank">My LinkedIn Profile</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Praveen Singh</p>
+    </footer>
+
+    <!-- Modal for project details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
